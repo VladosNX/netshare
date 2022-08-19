@@ -8,6 +8,7 @@ except ModuleNotFoundError:
     fixOrNo = input('Fix it now? [Y/N] ').lower()
     if fixOrNo == 'y':
         system('pip install termcolor')
+        from termcolor import colored
     else:
         print('Canceled')
         exit()

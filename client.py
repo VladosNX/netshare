@@ -7,12 +7,11 @@ saveAs = input('Save file as: ')
 print('Receiving file...')
 installedOs = platform.system()
 if installedOs == 'Linux':
-    system(f"wget -nv 192.168.100.{code.split('-')[0]}:{code.split('-')[1]}")
-    system(f"mv index.html {saveAs}")
+    system(f"wget -nv 192.168.100.{code.split('-')[0]}:{code.split('-')[1]}/{saveAs}")
     system('clear')
     print('File received')
 elif installedOs == 'Windows':
-    system(f"curl -O 192.168.100.{code.split('-')[0]}:{code.split('-')[1]}")
+    system(f"curl -O 192.168.100.{code.split('-')[0]}:{code.split('-')[1]}/{saveAs}")
     system('cls')
     print('File received')
 else:
