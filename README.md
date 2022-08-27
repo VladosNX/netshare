@@ -1,4 +1,4 @@
-# NetShare V1.0
+# NetShare V1.0.1
 ###### By VladosNX
 
 NetShare is a program which can help you to transfer files between devices using Wi-Fi network. This program is programmed on Python 3.

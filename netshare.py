@@ -20,11 +20,14 @@ if installedOs == 'Windows':
 elif installedOs == 'Linux':
     system('clear')
 
-print(colored(text='NetShare v1.0',color='blue'))
+print(colored(text='NetShare v1.0.1',color='blue'))
 print('Main menu')
 print('1. Send file')
 print('2. Receive file')
-action = input('> ')
+try:
+    action = input('> ')
+except KeyboardInterrupt:
+    exit()
 if action == '1':
     import sendfile
 elif action == '2':
